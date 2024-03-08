@@ -9,7 +9,8 @@ export async function requestAirdrop(connection: Connection, accountKeypair: Key
             blockhash: latestBlockHash.blockhash,
             lastValidBlockHeight: latestBlockHash.lastValidBlockHeight,
             signature: signature
-        })
+        });
+        
         console.log('Airdrop successful:', result);
     } catch (error) {
         console.error('Airdrop failed:', error);
